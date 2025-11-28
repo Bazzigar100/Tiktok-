@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="video-feed-container">
+            <!-- Videos will be dynamically inserted here -->
+        </div>
+
+        <div class="bottom-nav">
+            <button>Home</button>
+            <button>Discover</button>
+            <button class="upload-btn">
+                <input type="file" id="upload-input" accept="video/*" style="display: none;">
+                +
+            </button>
+            <button>Inbox</button>
+            <button>Me</button>
+            <button id="premium-btn">⭐</button>
+        </div>
+    </div>
+    <div id="premium-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Get Premium</h2>
+            <p>Scan the QR code or use the UPI ID to pay.</p>
+            <p>UPI ID: 9454881411@fam</p>
+            <input type="text" id="transaction-id" placeholder="Enter Transaction ID">
+            <button id="verify-payment-btn">Verify Payment</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
